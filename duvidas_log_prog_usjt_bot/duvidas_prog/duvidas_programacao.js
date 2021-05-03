@@ -14,7 +14,8 @@ let pontos = 0;
 bot.start(async (ctx) => 
 {
     const nome = ctx.update.message.from.first_name
-    await ctx.reply(`Olá ${nome}! Sabemos como é entusiasmante entrar nas matérias em que mais esperamos desde o primeiro dia na Faculdade, e por isso, estamos aqui para lhe ajudar nos primeiros passos. Em primeiro, gostaríamos de saber se você já sabe o que é Lógica de Pogramação`, 
+    await ctx.reply(`Olá ${nome}! 
+    Sabemos como é entusiasmante entrar nas matérias em que mais esperamos desde o primeiro dia na Faculdade, e por isso, estamos aqui para lhe ajudar nos primeiros passos. Em primeiro, gostaríamos de saber se você já sabe o que é Lógica de Pogramação`, 
     await Markup.keyboard(['Sim, eu já sei lógica de programação', 'Não, eu ainda não sei lógica de programação']).resize().oneTime().extra())
 })
 
